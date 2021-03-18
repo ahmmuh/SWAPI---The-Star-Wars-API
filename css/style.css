@@ -13,4 +13,6 @@ input::placeholder {
   font-size: 1.5rem;
   font-style: italic;
 }
-
+.errMsg {
+  color: red;
+}

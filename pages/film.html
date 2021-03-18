@@ -10,34 +10,34 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Search app</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Film detail</title>
   </head>
   <body>
-    <div class="container pt-3">
-      <div class="form-group">
-        <input
-          type="text"
-          name=""
-          id="search"
-          class="form-control p-4"
-          placeholder="Search films....."
-          aria-describedby="helpId"
-        />
-      </div>
+    <!-- titel, regissör, producent, "opening crawl", releasedatum, antal karaktärer,
+    och antal olika rymdskepp -->
 
-      <div class="container p-3">
-        <div class="row" id="filmRow">
-          <div class="col-lg-12 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                
-              </div>
+    <div class="container">
+      <h5 class="p-2 text-secondary">Welcome to film detail page</h5>
+
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title" id="detailFilmTitle">Title</h4>
+              <p class="director"></p>
+              <p class="producer"></p>
+              <p class="description"></p>
+              <span class="release_date"></span>
+              <p class="characters"></p>
+              <p class="species"></p>
             </div>
+            <button class="btn btn-secondary" id="backBtn">Back</button>
           </div>
         </div>
       </div>
     </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -48,6 +48,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
+    <script src="../js/film.js"></script>
   </body>
 </html>
