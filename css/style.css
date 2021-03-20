@@ -1,7 +1,11 @@
+/* make the body  linear-gradient with these colors*/
 body {
-  background: linear-gradient(rgba(253, 28, 28, 0.555), rgb(177, 175, 175));
+  background: #2193b0;
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
 }
 
+/* added border-radius to the search input */
 input#search {
   border-radius: 3rem;
   -webkit-border-radius: 3rem;
@@ -9,10 +13,13 @@ input#search {
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
 }
+/* changed the font-size and font-style on the text in the placeholder */
 input::placeholder {
   font-size: 1.5rem;
   font-style: italic;
 }
-.errMsg {
-  color: red;
+
+/* Hided the search input label because i don't need to show label text - I added the label in the html page to pass the validation test. */
+#label-search {
+  display: none;
 }

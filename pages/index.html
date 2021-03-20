@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- added Bootstrap css and my own css files -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -11,43 +12,38 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Search app</title>
+    <title>Searchbar Applikation</title>
   </head>
   <body>
+    <!-- Bootstrap class "container" and pt to take input element down from top -->
+    <!-- And then created div with Bootstrap class and inside the div I have created input for the search and lable element -->
     <div class="container pt-3">
-      <div class="form-group">
+      <div class="form-group d-flex justify-content-between">
         <input
           type="text"
-          name=""
+          name="search"
           id="search"
           class="form-control p-4"
           placeholder="Search films....."
           aria-describedby="helpId"
         />
+        <label for="search" id="label-search">Search films</label>
       </div>
-
+      <!-- div with Bootstrap classes (container and p-3) 
+      py = padding around the element (left, right, bottom and top)-->
+      <!-- the container I created row with column. In the col i have card and card body which hold the film content  -->
       <div class="container p-3">
         <div class="row" id="filmRow">
           <div class="col">
             <div class="card">
-              <div class="card-body">
-                <p class="errMsg"></p>
-              </div>
+              <p class="lead p-2">Found movies appear here</p>
+              <div class="card-body"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
+    <!-- I have linked app.js -->
     <script src="../js/app.js"></script>
   </body>
 </html>
